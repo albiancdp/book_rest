@@ -17,7 +17,7 @@ const defaults = async (req, res) => {
         title: item.volumeInfo.title,
         author: item.volumeInfo.authors,
         description: item.volumeInfo.description,
-        thumbnail: item.volumeInfo.imageLinks.thumbnail,
+        thumbnail: item.volumeInfo.imageLinks?.thumbnail || '',
         link: item.volumeInfo.infoLink,
         rating: item.volumeInfo.averageRating || 0,
       };
