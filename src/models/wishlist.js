@@ -10,19 +10,15 @@ const tableSchema = new Schema({
     type: String,
     unique: true,
     required: true,
-    lowercase: true,
     trim: true,
   },
   thumbnail: {
     type: String,
     required: true,
-    lowercase: true,
-    trim: true,
   },
   author: {
     type: Array,
     required: true,
-    lowercase: true,
     trim: true,
   },
   rating: {
